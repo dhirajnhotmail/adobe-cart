@@ -1,0 +1,23 @@
+.sort-filter {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    .sort-filter {
+        display: block;
+        width: 100%;
+        height: 20px;
+    }
+
+    .sort-filter>div {
+        width: 50%;
+        float: left;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .sort-filter img {
+        width: 16px;
+        height: 16px;
+    }
+}

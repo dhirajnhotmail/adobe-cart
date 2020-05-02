@@ -14,7 +14,7 @@ class Search extends Component {
 
     componentDidMount() {
         this.setState({ productList: [...this.props.productList], cartItems: [...this.props.cartItems] });
-        if (this.props.location.pathname == '/') {
+        if (this.props.location.pathname === '/') {
             this.setState({ isRootPath: true });
         } else {
             this.setState({ isRootPath: false });
@@ -83,7 +83,7 @@ class Search extends Component {
                 return null;
             });
         } else {
-            sortedList = [... this.state.cartItems];
+            sortedList = [...this.state.cartItems];
             this.setState({ showSearchBar: !this.state.showSearchBar });
         }
 

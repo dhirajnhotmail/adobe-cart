@@ -67,3 +67,10 @@
 .price-label {
     text-align: center;
 }
+
+@media only screen and (max-width:768px) {
+    .mobile-filter {
+        display: block;
+        padding: 10px 0px;
+    }
+}

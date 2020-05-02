@@ -9,6 +9,7 @@ import Footer from '../../Components/Footer/footer';
 import './shoppingList.scss';
 import { getInitialData } from '../../Api/api';
 import { initialData } from '../../Api/cartJson';
+import SortFilter from '../../Components/SortFilter/sortFilter';
 
 class ShoppingList extends React.Component {
     componentDidMount() {
@@ -26,9 +27,12 @@ class ShoppingList extends React.Component {
             <div>
                 <Header></Header>
                 <div className='main-container'>
+                    <SortFilter></SortFilter>
                     <div className='left-container'><Filter></Filter></div>
                     <div className='right-container'>
-                        <Sort></Sort>
+                        <div className='desktop-sort'>
+                            <Sort></Sort>
+                        </div>
                         <Shopping productList={this.props.productList}></Shopping>
                     </div>
                 </div>

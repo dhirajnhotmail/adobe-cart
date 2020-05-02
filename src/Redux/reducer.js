@@ -14,6 +14,8 @@ export const reducer = (state = 0, action) => {
             };
         case "UPDATEPRICE":
             return { ...state, cartPrice: action.payload };
+        case "SORTFILTERSHOW":
+            return { ...state, sortFilterShow: { ...action.payload } };
         default:
             return state;
     }
