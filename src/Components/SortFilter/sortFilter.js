@@ -42,7 +42,6 @@ class SortFilter extends Component {
 
 
 const mapStateToProps = state => {
-    console.log(state.sortFilterShow);
     return {
         sortFilter: state.sortFilterShow || {
             showSort: false,
