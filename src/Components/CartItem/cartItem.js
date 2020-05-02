@@ -8,7 +8,7 @@ class CartItem extends Component {
             <div>
                 {this.props.cartItems.map((item, index) => {
                     return (<div key={index} className='cart-item'>
-                        <div><img src={item.image} alt=''></img></div>
+                        <div className='cart-image'><img src={item.image} alt=''></img></div>
                         <div>
                             <div className='product-name'>{item.name}</div>
                             <div className='price-details-cart'>

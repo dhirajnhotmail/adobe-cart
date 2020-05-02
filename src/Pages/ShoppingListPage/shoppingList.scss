@@ -14,3 +14,13 @@
 .main-container .right-container {
     width: 80%;
 }
+
+@media only screen and (max-width:768px) {
+    .main-container .left-container {
+        display: none;
+    }
+
+    .main-container .right-container {
+        width: 100%;
+    }
+}

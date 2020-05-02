@@ -1,4 +1,4 @@
-.sort span {
+.sort .desktop-sort span {
     padding-right: 25px;
     cursor: pointer;
 }
@@ -11,4 +11,10 @@
 .icon img {
     width: 32px;
     height: 32px;
+}
+
+@media only screen and (max-width:768px) {
+    .desktop-sort {
+        display: none;
+    }
 }

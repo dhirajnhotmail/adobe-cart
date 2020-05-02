@@ -13,3 +13,13 @@
 .cart-main-container .right-container {
     width: 30%;
 }
+
+@media only screen and (max-width:768px) {
+    .cart-main-container .left-container {
+        width: 100%;
+    }
+
+    .cart-main-container .right-container {
+        width: 100%;
+    }
+}

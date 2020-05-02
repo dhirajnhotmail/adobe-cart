@@ -16,10 +16,12 @@ class Sort extends Component {
     render() {
         return (
             <div className='sort'>
-                <span><b>Sort By</b></span>
-                <span className={this.state.high} onClick={() => this.selectedSortType('High')}>Price -- Hight Low</span>
-                <span className={this.state.low} onClick={() => this.selectedSortType('Low')}>Price -- Low High</span>
-                <span className={this.state.discount} onClick={() => this.selectedSortType('Discount')}>Discount</span>
+                <div className='desktop-sort'>
+                    <span><b>Sort By</b></span>
+                    <span className={this.state.high} onClick={() => this.selectedSortType('High')}>Price -- Hight Low</span>
+                    <span className={this.state.low} onClick={() => this.selectedSortType('Low')}>Price -- Low High</span>
+                    <span className={this.state.discount} onClick={() => this.selectedSortType('Discount')}>Discount</span>
+                </div>
             </div>
         )
     }

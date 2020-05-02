@@ -22,8 +22,8 @@ class Filter extends Component {
                         <span className='minVal'>{this.state.min} </span>
                         <span className='maxVal'>{this.state.max} </span>
                     </div>
-                    <input type="range" min="100" max="100000" value={this.state.min} className="slider" onChange={(e) => { this.onChangeSliderFirst(e) }} />
-                    <input type="range" min="100" max="100000" value={this.state.max} className="slider" onChange={(e) => { this.onChangeSliderSecond(e) }} />
+                    <input type="range" min="100" max="100000" value={this.state.min} className="slider" onChange={(event) => { this.onChangeSliderFirst(event) }} />
+                    <input type="range" min="100" max="100000" value={this.state.max} className="slider" onChange={(event) => { this.onChangeSliderSecond(event) }} />
                     <div className='price-label'>Price</div>
                 </div>
                 <div id='filter' onClick={() => { this.calculateRange() }}>Apply</div>
@@ -31,12 +31,12 @@ class Filter extends Component {
         )
     }
 
-    onChangeSliderFirst = function (e) {
-        this.setState({ min: e.target.value });
+    onChangeSliderFirst = function (event) {
+        this.setState({ min: event.target.value });
     }
 
-    onChangeSliderSecond = function (e) {
-        this.setState({ max: e.target.value });
+    onChangeSliderSecond = function (event) {
+        this.setState({ max: event.target.value });
     }
 
     calculateRange = function () {

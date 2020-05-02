@@ -8,3 +8,10 @@
 .cartItem {
     clear: both;
 }
+
+@media only screen and (max-width:768px) {
+    .cartItem>div {
+        width: 45%;
+        margin: 5px;
+    }
+}

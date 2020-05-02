@@ -71,3 +71,26 @@
     border-radius: 50%;
     color: #cccccc;
 }
+
+@media only screen and (max-width:768px) {
+    .cart-item>div {
+        width: 50%;
+    }
+
+    .product-quantity {
+        padding: 5px 0px;
+    }
+
+    .product-remove {
+        padding: 5px 0px;
+    }
+
+    .product-name,
+    .price-details {
+        padding: 10px 0px;
+    }
+
+    .cart-item {
+        margin: 10px 0px;
+    }
+}
