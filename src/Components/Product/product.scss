@@ -1,0 +1,40 @@
+.product {
+    padding: 5px;
+}
+
+img {
+    height: 150px;
+    width: 100%;
+}
+
+.price-details {
+    height: 30px;
+}
+
+.price-details>span {
+    padding-right: 5px;
+}
+
+#add-to-cart {
+    border-radius: 25px;
+    background: #F7AD22;
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-name,
+.price-details {
+    padding: 5px 0px;
+}
+
+.actual-price {
+    color: gray;
+}
+
+.discount {
+    color: #3BB03D;
+}

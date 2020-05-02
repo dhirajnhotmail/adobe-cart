@@ -1,0 +1,16 @@
+.main-container {
+    padding: 20px 0px;
+    min-height: 500px;
+}
+
+.main-container>div {
+    float: left;
+}
+
+.main-container .left-container {
+    width: 20%;
+}
+
+.main-container .right-container {
+    width: 80%;
+}
