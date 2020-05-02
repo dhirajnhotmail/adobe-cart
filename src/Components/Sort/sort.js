@@ -76,13 +76,13 @@ class Sort extends Component {
         if (sortType === 'High') {
             state.high = 'sort-active';
             sortedList = list.sort((a, b) => {
-                return (a.price.display - b.price.display);
+                return (b.price.display - a.price.display);
             });
         }
         if (sortType === 'Low') {
             state.low = 'sort-active';
             sortedList = list.sort((a, b) => {
-                return (b.price.display - a.price.display);
+                return (a.price.display - b.price.display);
             });
         }
         if (sortType === 'Discount') {
