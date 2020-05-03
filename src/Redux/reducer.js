@@ -22,13 +22,25 @@ export const reducer = (state = 0, action) => {
 };
 
 const addToCart = function (state, action) {
-    let cartData = []
+    let cartData = [];
     if (state.cartData) {
-        cartData = [...state.cartData, action.payload];
+        let existingData = [...state.cartData];
+        let foundInCartAt;
+        existingData.forEach((item, index) => {
+            if (item.name === action.payload.name) {
+                foundInCartAt = index;
+            }
+        });
+
+        if (foundInCartAt >= 0) {
+            existingData[foundInCartAt].quantity += 1;
+            cartData = [...existingData];
+        } else {
+            cartData = [...existingData, { ...action.payload }];
+        }
     } else {
-        cartData = [action.payload];
+        cartData = [{ ...action.payload }];
     }
 
-    let uniqueData = Array.from(new Set(cartData.map(JSON.stringify))).map(JSON.parse);
-    return { ...state, cartData: uniqueData }
+    return { ...state, cartData: cartData };
 }
